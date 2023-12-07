@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Help
+{% endblock %}
+
+{% block main %}
+<div class="colourBox">
+	<h1>How to use this Web App</h1>
+</div>
+<table style="width: 1000px; height: 150px; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 323.111px;">
+<p style="text-align: left;"><span style="font-weight: 400;">This program is a simple easy holiday/event planner that allows users to manage different tasks that go into making such events work. In this program, anything to-which tasks are being assigned to is called &ldquo;</span><strong>Event</strong><span style="font-weight: 400;">&rdquo;. If a user of this program chooses to create or open an event, they become an Event </span><strong>Organiser</strong><span style="font-weight: 400;">.</span></p>
+<p style="text-align: left;"><span style="font-weight: 400;">Events have 3 phases:</span></p>
+<p style="text-align: left;"><span style="font-weight: 400;">1.</span><strong>Pre-Event</strong><span style="font-weight: 400;"> &ndash; The time before the Event happens and everything leading up to it.</span></p>
+<p style="text-align: left;"><span style="font-weight: 400;">2.</span><strong>During-Event</strong><span style="font-weight: 400;"> &ndash; The time when the event is happening. For example, this may be the user in their holiday destination doing the things they desired to do there.</span></p>
+<p style="text-align: left;"><span style="font-weight: 400;">3.</span><strong>Post-Event</strong><span style="font-weight: 400;"> &ndash; The time after the event, and getting back to normal life.</span></p>
+</td>
+<td style="width: 327.556px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 323.111px;">
+<p style="text-align: left;">When an Organiser (the user of this program) chooses to <strong>create</strong> a new event (using the create event button), they will be lead to fill in several fields of information which include their proposed dates for the 3 phases mentioned above, the Event&rsquo;s name, and its location. The program will automatically calculate the time space between each phase. The program will ask for the organiser&rsquo;s email and password. This is so that a organiser can send email notifications to &ldquo;<strong>members</strong>&rdquo; (everyone else who is involved in this Event) about when they have tasks assigned to them. It is good idea to save an immediately once it has been created using the save event button.</p>
+<p style="text-align: left;">When logging in or registering for the first time an event can be opened in the <strong>event page</strong> to be loaded into the task list.</p>
+</td>
+<td style="width: 327.556px;"><img src="Help1.jpg" alt="The events page" width="315" /></td>
+</tr>
+<tr>
+<td style="width: 323.111px;">
+<p style="text-align: left;">After a program is created or opened, they will be brought to the main planning page which is called the &ldquo;<strong>Task List</strong>&rdquo;. This Task List is a table which will hold all the <strong>tasks</strong> an organiser wishes to assign to an Event. The Task List also displays the current phase the Event is in, how long until the next phase and the location of the Event. It also holds the button for the notepad function.</p>
+</td>
+<td style="width: 327.556px;"><img src="Help2.jpg" alt="The Task List page" width="315" /></td>
+</tr>
+<tr>
+<td style="width: 323.111px;">
+<p style="text-align: left;">A task has 5 main features:</p>
+<ul style="text-align: left;">
+<li>Task Name</li>
+<li>The Member Responsible for the Task</li>
+<li>The Due Date (and Time remaining)</li>
+<li>Extra Details (optional)</li>
+<li>(There is also the option to add a member&rsquo;s email should the organiser decide to use the email function.)</li>
+<li>The Progress of the task.</li>
+</ul>
+<p style="text-align: left;">The main 4 features can be seen on the Task List page itself. There is an option to create more tasks, as well as an option to edit a task and delete a task. These tasks can be anything the organiser wishes as long as it can fulfil all the entries mentioned. The user can fill in these fields in a separate window called the Task Creator window.</p>
+<p style="text-align: left;">In addition to this, the notepad function can be used a general notes area and works as an "additional details" space for the entire event. It can be accessed using the notepad button in the navigation bar. To go back to the Task List at any time, click the "Holiday Planner!" button.</p>
+</td>
+<td style="width: 327.556px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 323.111px;">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+<td style="width: 327.556px;">&nbsp;
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+{% endblock %}

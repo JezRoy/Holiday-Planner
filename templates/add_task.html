@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Add Task
+{% endblock %}
+
+{% block main %}
+<p></p>
+	<div class="colourBox">
+		<h1>Add Task</h1>
+	</div>
+<table style="width: 700px; height: 100px; margin-left: auto; margin-right: auto;" border="0">
+	<thead col=2>
+	</thead>
+	<form action="/addTask" method="post">
+	<tbody>
+		<tr style="height: 34px;">
+<td style="text-align: right; height: 34px;">Enter Task Name</td>
+<td style="height: 34px;"><input class="form-control" autocomplete="off" name="task name" type="text" /></td>
+<td style="text-align: right; height: 34px;">Enter Due Date</td>
+<td style="height: 34px;"><input name="due date" type="text" />Form: dd/mm/yy</td>
+</tr>
+<tr style="height: 35px;">
+<td style="text-align: right; height: 35px;">Name of the Member Responsible</td>
+<td style="height: 35px;"><input class="form-control" name="member responsible" type="text" /></td>
+<td style="text-align: right; height: 35px;">Member's email</td>
+<td style="height: 35px;"><input class="form-control" name="member email" type="text" value="NONE"/></td>
+</tr>
+<tr style="height: 13.2px;">
+<td style="text-align: right; height: 13.2px;">Progress of Task</td>
+<td style="height: 13.2px;"><input class="form-control" autocomplete="off" min=0 max=100 name="progress" type="number" /></td>
+<td style="height: 13.2px;">&nbsp;</td>
+<td style="height: 13.2px;">&nbsp;</td>
+</tr>
+<tr style="height: 17px;">
+<td style="text-align: right; height: 17px;">Extra Details</td>
+<td style="height: 17px;" colspan="3"><textarea cols="50" name="extra details" rows="8">		</textarea></td>
+</tr>
+<tr style="height: 17px;">
+<td style="text-align: center; height: 17px;" colspan="4"><button class="btn btn-primary" type="submit">Save</button></td>
+</tr>
+	</tbody>
+	</form>
+</table>
+{% endblock %}

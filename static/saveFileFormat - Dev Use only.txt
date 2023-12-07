@@ -1,0 +1,15 @@
+<Name of Event>
+<Organiser Username>
+<Organiser Email>
+<Name of Main Location>
+<Start Date Pre-Event (DD/MM/YY)> | <End Date Pre-Event (DD/MM/YY)>
+<Start Date During-Event (DD/MM/YY)> | <End Date During-Event (DD/MM/YY)>
+<Start Date Post-Event (DD/MM/YY)> | <End Date Post-Event (DD/MM/YY)>
+<NotepadContent>
+<saveFileName>
+-
+<Task Name> | <Task Memember Responsible> | <Member Email> | <Task Due Date> | <Task Extra Details>
+-
+<Task Name> | <Task Memember Responsible> | <Member Email> | <Task Due Date> | <Task Extra Details>
+-
+FINISH

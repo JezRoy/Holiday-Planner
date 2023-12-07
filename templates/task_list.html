@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Task List
+{% endblock %}
+
+{% block main %}
+	<div class="colourBox">
+		<h1>Task List</h1>
+			<h2>{{ Event[0] }}</h2>
+	</div>
+	<div style="font-weight:100">
+		<h4 style="text-allign: left;">Location: {{ Event[3] }}</h4><h4 style="text-allign: centre;">Current Phase: {{ phase }}</h4><h4 style="text-allign: right;">Time until Next phase: {{ time }} day(s)</h4>
+	</div>
+        <div class="form-group">
+		<table class="table table-striped">
+			<thead col=6>
+				<tr>
+					{% for heading in ['', 'Name', 'Time Left (Days)', 'Progress(%)', 'Member Responsible', ''] %}
+						<div class="form-group">
+                            				<th>{{ heading }}</th>
+                        			</div>
+					{% endfor %}
+				</tr>
+			</thead>
+			<tbody>
+				{% for task in AllTasks %}
+				<tr>
+					<form action="/" method="post">
+					<td>
+						<button class="btn btn-secondary" type="submit" name="edit" value="{{ task[0] }}">Edit</button>
+					</td>
+					<td>{{ task[0] }}</td>
+					<td>
+						{% if TimeLeftCalculator(task[3]) <= 0 %}
+							0
+						{% else %}
+							{{ TimeLeftCalculator(task[3]) }}
+						{% endif %}
+					</td>
+					<td>{{ task[5] }}</td>
+					<td>{{ task[1] }}</td>
+					<td>
+						<button class="btn btn-secondary" type="submit" name="delete" value="{{ task[0] }}">Delete</button>
+					</td>
+					</form>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	</div>
+    </form>
+{% endblock %}

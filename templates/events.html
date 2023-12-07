@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Events
+{% endblock %}
+
+{% block main %}
+<p></p>
+<div style="font-weight:400;">
+	<h1>Select or Create an Event</h1>
+</div>
+<p></p>
+<div>
+{% if noEvents == False %}
+	<h3>List of all saved event files:</h3>
+		{% for item in events %}
+		<form action="/events" method="post">
+			<p>
+				<div>
+					<button class="btn btn-primary" type="submit" name="eventChosen" value="{{ item }}">{{ item }}</button>
+					<button class="btn btn-secondary" type="submit" name="eventEdited" value="{{ item }}">Edit</button>
+					<button class="btn btn-secondary" type="submit" name="eventDeleted" value="{{ item }}">Delete</button>
+				</div>
+			</p>
+		</form>
+		{% endfor %}
+{% else %}
+	<h3>No events found. Please create a new one.</h3>
+{% endif %}
+</div>
+{% endblock %}

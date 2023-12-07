@@ -1,0 +1,12 @@
+New York Business
+JohnnyDoe
+
+New York City, USA
+26/05/21|30/05/21
+01/06/21|14/06/21
+15/06/21|20/06/21
+Nothing for now...
+NewYorkTrip
+Buy Flight Tickets|John Doe|NONE|25/06/21|Ask if Jane wants to come along, if so, buy extra tickets.		|0|
+-
+FINISH

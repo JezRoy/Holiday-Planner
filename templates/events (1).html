@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Events
+{% endblock %}
+
+{% block main %}
+<p></p>
+<div>
+	<h1>Select or Create an Event</h1>
+</div>
+<p></p>
+<div>
+	<h3>List of all saved event files:</h3>
+		{% for item in events %}
+		<form action="/events" method="post">
+			<p>
+				<div>
+					<button type="submit" name="eventEdited" value="{{ item }}"><img src="Edit.jpg"></button>
+					<button class="btn btn-primary" type="submit" name="eventChosen" value="{{ item }}">{{ item }}</button>
+					<button type="submit" name="eventDeleted" value="{{ item }}"><img src="Delete.jpg"></button>
+					<img src="D:\Program Files\Python\WebApps\HolidayPlanner\templates/Edit.jpg" alt="Delete {{ item }}" width="50" height="50">
+				</div>
+			</p>
+		</form>
+		{% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Edit Event
+{% endblock %}
+
+{% block main %}
+<p></p>
+	<div class="colourBox">
+		<h1>Edit Event</h1>
+	</div>
+<table style="width: 700px; height: 100px; margin-left: auto; margin-right: auto;" border="0">
+	<thead col=2>
+	</thead>
+	<form action="/editEvent" method="post">
+	<tbody>
+		<tr style="height: 34px;">
+<td style="text-align: right; height: 34px;">Enter Event Name</td>
+<td style="height: 34px;"><input class="form-control" autocomplete="off" name="event name" type="text" value="{{ Event[0] }}"/></td>
+<td style="text-align: right; height: 34px;">Enter Location</td>
+<td style="height: 34px;"><input class="form-control" autocomplete="off" name="location" type="text" value="{{ Event[3] }}" /></td>
+</tr>
+<tr style="height: 35px;">
+<td style="text-align: right; height: 35px;">Organiser Email</td>
+<td style="height: 35px;"><input class="form-control" name="organiser email" type="text" value="{{ Event[2] }}" /></td>
+<td style="text-align: right; height: 35px;">Save Name for Event</td>
+<td style="height: 35px;"><input class="form-control" name="save name" type="text" value="{{ Event[8] }}" /></td>
+</tr>
+<tr style="height: 13.2px;">
+<td style="text-align: right; height: 13.2px;">Pre-Event Start Date&nbsp;</td>
+<td style="height: 13.2px;"><input name="pre-event start" type="text" value="{{ time[0][0] }}"/>Form: dd/mm/yy</td>
+<td style="height: 13.2px;">Pre-Event End Date</td>
+<td style="height: 13.2px;"><input name="pre-event end" type="text" value="{{ time[0][1] }}"/>Form: dd/mm/yy</td>
+</tr>
+<tr style="height: 13.2px;">
+<td style="text-align: right; height: 13.2px;">During-Event Start Date</td>
+<td style="height: 13.2px;"><input name="during-event start" type="text" value="{{ time[1][0] }}"/>Form: dd/mm/yy</td>
+<td style="height: 13.2px;">During-Event End Date</td>
+<td style="height: 13.2px;"><input name="during-event end" type="text" value="{{ time[1][1] }}"/>Form: dd/mm/yy</td>
+</tr>
+<tr style="height: 13.2px;">	
+<td style="text-align: right; height: 13.2px;">Post-Event Start Date</td>
+<td style="height: 13.2px;"><input name="post-event start" type="text" value="{{ time[2][0] }}"/>Form: dd/mm/yy</td>
+<td style="height: 13.2px;">Post-Event End Date</td>
+<td style="height: 13.2px;"><input name="post-event end" type="text" value="{{ time[2][1] }}"/>Form: dd/mm/yy</td>
+</tr>
+<tr style="height: 13.2px;">
+<td style="text-align: right; height: 13.2px;">Notepad (Can be left blank for now)</td>
+<td style="height: 13.2px;" colspan="3"><textarea cols="60" name="notepad" rows="8" type="text">{{ Event[7] }}</textarea></td>
+</tr>
+<tr style="height: 17px;">
+<td style="text-align: center; height: 17px;" colspan="4"><button class="btn btn-primary" type="submit">Save</button></td>
+</tr>
+	</tbody>
+	</form>
+</table>
+{% endblock %}

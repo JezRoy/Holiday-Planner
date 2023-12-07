@@ -1,0 +1,16 @@
+BerlinTestTrip
+JohnDoe
+
+Berlin
+01/02/21|07/02/21
+08/02/21|03/03/21
+04/03/21|08/03/21
+~This is an example of how an event will be saved using a text file. The notepad content will be one continuous string.~
+BerlinTest
+Book Flight Seats|Jeremy Roy|jeremynroy@gmail.com|29/02/20|Get this done as soon as possible.|100|
+-
+Book Tickets to Berlin Zoo|Caleb George|calebgeorge53@gmail.com|15/02/20|Another test email for member who is not me.|75|
+-
+Look for hotels|Jeremy Roy|jeremynroy@gmail.com|29/02/20|NONE|100|
+-
+FINISH
